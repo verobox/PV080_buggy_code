@@ -18,7 +18,7 @@ class Person(object):
     def __init__(self, name):
         self.name = name
 
-
+"Print nametag"
 def print_nametag(format_string, person):
     print(format_string.format(person=person))
 
@@ -30,7 +30,7 @@ def fetch_website(urllib_version, url):
  
     try: 
         http = urllib.PoolManager()
-        r = http.request('GET', url)
+        req = http.request('GET', url)
     except:
         print('Exception')
 
